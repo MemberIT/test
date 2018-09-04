@@ -1,0 +1,19 @@
+---
+nomad::config_hash:
+  region: ru-msk
+  datacenter: dataline
+  log_level: INFO
+  bind_addr: '10.11.11.30'
+  data_dir: '/opt/nomad'
+  server:
+    enabled: true
+    bootstrap_expect: 3
+    server_join:
+      retry_join: 
+        - 10.11.11.10:4648
+  client:
+    enabled: true
+    servers:
+      - 10.11.11.10:4647
+      - 10.11.11.20:4647
+      - 10.11.11.30:4647
