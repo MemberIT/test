@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
-#
-# Managed by puppet!
-#
 PATH='/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin:/opt/puppetlabs/bin'
 
 exit_status() {
