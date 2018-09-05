@@ -10,4 +10,10 @@ class roles::nomad {
 
   Class['::profiles::docker'] ->
     Class['::profiles::nomad']
+
+  if $::hostname == 'nomad3' {
+    class { '::profiles::echo':
+      stage => 'after',
+    }
+  }
 }
