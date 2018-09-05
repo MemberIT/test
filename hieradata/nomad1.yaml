@@ -14,3 +14,4 @@ nomad::config_hash:
       - 10.11.11.10:4647
       - 10.11.11.20:4647
       - 10.11.11.30:4647
+    network_interface: enp0s8
