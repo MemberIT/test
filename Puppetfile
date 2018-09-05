@@ -15,3 +15,13 @@ mod 'staging',
   :git => 'https://github.com/voxpupuli/puppet-staging.git',
   :tag => 'v3.2.0'
 
+# Install puppetlabs/docker and pin to the '2.0.0' tag
+mod 'docker',
+  :git => 'https://github.com/puppetlabs/puppetlabs-docker.git',
+  :tag => '2.0.0'
+
+# Install puppetlabs/apt and pin to the '6.0.0' tag
+mod 'apt',
+  :git => 'https://github.com/puppetlabs/puppetlabs-apt.git',
+  :tag => '6.0.0'
+
