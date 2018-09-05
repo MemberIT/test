@@ -6,7 +6,7 @@ job "echo" {
   type = "service"
 
   update {
-    stagger      = "5s"
+    stagger      = "1s"
     max_parallel = 1
   }
 
